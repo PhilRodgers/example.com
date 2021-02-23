@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
-        <title>Philip Rodgers</title>
-     </head>
+<?php
 
-    <body>
+//Build the page metadata
+$meta = [];
+$meta['description'] = "Resume MicroTrain2101 For Web Development";
+$meta['keywords'] = "resume, MicroTrain2101, Web development, web development";
 
-      <header>
-        <span class="logo">My WebSite</span>
-        <a id="toggleMenu">Menu</a>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-    </header>
+
+$content = <<<EOT
 
     <main>
     
@@ -156,5 +143,7 @@
       </div>
       
     </main>
-  </body>
-</html>
+
+    EOT;
+
+include '../core/layout.php';
