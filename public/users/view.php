@@ -1,5 +1,10 @@
 <?php
 include '../../core/db_connect.php';
+//require '../../core/session.php';
+
+require '../../core/bootstrap.php';
+
+checkSession();
 
 $input = filter_input_array(INPUT_GET);
 
@@ -24,7 +29,9 @@ $content= <<<EOT
 {$row['last_name']}<br>
 {$row['email']}
 <div>
+<br>
 <a class="btn btn-link" href="edit.php?id={$row['id']}">Edit</a>
+<br>
 <a class="btn btn-link" href="delete.php?id={$row['id']}">Delete</a>
 </div>
 EOT;

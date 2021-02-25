@@ -173,7 +173,7 @@ img.rounded {
 
 
 /** resume styling */
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
   }
 
@@ -186,19 +186,25 @@ h3 {
 .text-initial {
   text-transform: initial; }
 
-@media only screen and (min-width: 960px) {
-  .cc-left {
-    float: left;
-    text-align: left;
-    width: 33%;
-    margin-left: 17%;
-    box-sizing: border-box; }
-  .cc-right {
-    float: right;
-    text-align: left;
-    width: 33%;
-    margin-right: 17%;
-    box-sizing: border-box; } }
+  @media only screen and (min-width: 960px) {
+    .cc-left {
+      float: left;
+      text-align: left;
+      width: 33%;
+      margin-left: 17%;
+      box-sizing: border-box; }
+    .cc-right {
+      float: right;
+      text-align: left;
+      width: 33%;
+      margin-right: 17%;
+      box-sizing: border-box; } 
+    .cc-center {
+      float: center;
+      text-align: center;
+      width: 50%;
+      margin-left: 25%;
+      box-sizing: border-box; } }  
 
 .emp h3,
 .edu h3 {

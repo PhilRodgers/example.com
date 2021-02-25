@@ -1,6 +1,11 @@
 <?php
 require '../../core/functions.php';
 require '../../core/db_connect.php';
+//require '../../core/session.php';
+
+require '../../core/bootstrap.php';
+
+checkSession();
 
 $message=null;
 
@@ -47,7 +52,9 @@ $content = <<<EOT
 </div>
 <div class="form-group">
     <label for="last_name">Last Name</label>
-    <input id="last_name" name="last_namy credit card
+    <input id="last_name" name="last_name" type="text" class="form-control">
+</div>
+<br />
 <div class="form-group">
     <input type="submit" value="Submit" class="btn btn-primary">
 </div>

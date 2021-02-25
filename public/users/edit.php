@@ -1,6 +1,11 @@
 <?php
 require '../../core/functions.php';
 require '../../core/db_connect.php';
+//require '../../core/session.php';
+
+require '../../core/bootstrap.php';
+
+checkSession();
 
 // Get the user
 $get = filter_input_array(INPUT_GET);
@@ -77,6 +82,7 @@ $content = <<<EOT
     <label for="email">Email</label>
     <input id="email" value="{$row['email']}" name="email" type="text" class="form-control">
 </div>
+<br>
 <div class="form-group">
     <input type="submit" value="Submit" class="btn btn-primary">
 </div>

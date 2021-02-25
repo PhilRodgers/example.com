@@ -1,6 +1,11 @@
 <?php
 require '../../core/functions.php';
 require '../../core/db_connect.php';
+//require '../../core/session.php';
+
+require '../../core/bootstrap.php';
+
+checkSession();
 
 $args=[
   'id'=>FILTER_UNSAFE_RAW,
@@ -29,7 +34,7 @@ $content=<<<EOT
 <p class="text-danger text-center">Are you sure you want to delete {$row['title']}?</p>
 <div class="text-center">
   <a href="./" class="btn btn-success btn-lg">Cancel</a>
-  <br><br>
+  <br>
   <a href="delete.php?id={$row['id']}&confirm=1" class="btn btn-link text-danger">Delete</a>
 </div>
 EOT;

@@ -1,5 +1,7 @@
 <?php
 
+require '../core/bootstrap.php';
+
 //Build the page metadata
 $meta = [];
 $meta['description'] = "Cookie Policy MicroTrain2101";

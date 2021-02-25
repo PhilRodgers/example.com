@@ -1,5 +1,10 @@
 <?php
 
+require '../core/bootstrap.php';
+
+//require '../core/session.php';
+checkSession();
+
 //Build the page metadata
 $meta = [];
 $meta['description'] = "Thank you from the Philip Rodgers Web Development Site";

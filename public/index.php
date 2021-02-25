@@ -1,5 +1,7 @@
 <?php
 
+require '../core/bootstrap.php';
+
 //Build the page metadata
 $meta = [];
 $meta['description'] = "Welcome to Philip Rodgers Web Site";
@@ -13,8 +15,8 @@ $content .= <<<EOT
 </div>
 <div id="Sidebar">
   <div id="AboutMe">
-    <div class="header">Hello, I am Philip Rodgers</div>
-    <img src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm" alt="Philip Rodgers" class="img-circle">
+    <div class="header">Hello, I am Philip Rodgers. I am a student in the Microtrain Full Stack Web and Hybrid Mobile Apps Developer class. </div>
+    <img src="../favicon.ico" alt="Philip Rodgers" class="img-circle">
   </div>
 </div>
 </div>

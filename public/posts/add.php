@@ -2,6 +2,11 @@
 require '../../core/functions.php';
 //require '../../config/keys.php';
 require '../../core/db_connect.php';
+//require '../../core/session.php';
+
+require '../../core/bootstrap.php';
+
+checkSession();
 
 $message=null;
 
@@ -64,6 +69,7 @@ $content = <<<EOT
         <textarea id="meta_keywords" name="meta_keywords" rows="2" class="form-control"></textarea>
     </div>
 </div>
+<br />
 <div class="form-group">
     <input type="submit" value="Submit" class="btn btn-primary">
 </div>

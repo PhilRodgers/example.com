@@ -1,5 +1,10 @@
 <?php
 
+require '../core/bootstrap.php';
+
+//require '../core/session.php';
+//checkSession();
+
 //Build the page metadata
 $meta = [];
 $meta['description'] = "Resume MicroTrain2101 For Web Development";
@@ -8,19 +13,21 @@ $meta['keywords'] = "resume, MicroTrain2101, Web development, web development";
 
 $content = <<<EOT
 
-    <main>
+    <main font-size:40px>
     
       <h1>Philip Rodgers</h1>
     
-      Chicago Ridge, IL
-      &#x25CF;
-      312-399-2974
-      &#x25CF;
-      philip_rodgers@hotmail.com
-      <br>
-      <a href="https://www.linkedin.com/in/philip-rodgers-26a91316/" target="_blank" rel="noopener">LinkedIn</a>
-      &#x25CF;
-      <a href="http://github.com/microtrain2101" target="_blank" rel="noopener">GitHub</a>
+      <div>
+        Chicago Ridge, IL
+        &#x25CF;
+        312-399-2974
+        &#x25CF;
+        philip_rodgers@hotmail.com
+        <br>
+        <a href="https://www.linkedin.com/in/philip-rodgers-26a91316/" target="_blank" rel="noopener">LinkedIn</a>
+        &#x25CF;
+        <a href="http://github.com/microtrain2101" target="_blank" rel="noopener">GitHub</a>
+      </div>
     
       <h2>Full Stack Web and Hybrid Mobile Apps Developer</h2>
 

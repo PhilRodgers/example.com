@@ -2,6 +2,11 @@
 require '../../core/functions.php';
 // require '../../config/keys.php';
 require '../../core/db_connect.php';
+//require '../../core/session.php';
+
+require '../../core/bootstrap.php';
+
+checkSession();
 
 // Get the post
 $get = filter_input_array(INPUT_GET);
@@ -102,6 +107,7 @@ $content = <<<EOT
           >{$row['meta_keywords']}</textarea>
     </div>
 </div>
+<br />
 <div class="form-group">
     <input type="submit" value="Submit" class="btn btn-primary">
 </div>
